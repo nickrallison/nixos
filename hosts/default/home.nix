@@ -22,12 +22,11 @@
   home.file = {
   };
 
-  xdg.configFile."starship.toml".source = ../../modules/home-manager/starship/starship.toml;
+  # xdg.configFile."starship.toml".source = ../../modules/home-manager/starship/starship.toml;
 
   # Manage env vars
   home.sessionVariables = {
-    STARSHIP_CONFIG = "../../modules/home-manager/starship/starship.toml";
-    TEST_VAR = "yes";
+    # STARSHIP_CONFIG = "../../modules/home-manager/starship/starship.toml";
   };
 
   # Let Home Manager install and manage itself.
