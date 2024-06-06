@@ -1,3 +1,4 @@
+# tmux.nix
 {pkgs, ...}: let
   tmux-super-fingers =
     pkgs.tmuxPlugins.mkTmuxPlugin
