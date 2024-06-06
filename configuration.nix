@@ -83,7 +83,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      "nick" = import ./home.nix;
+      "nick" = import ${HOME}/dotfiles/nixos/home.nix;
     };
   };
 
