@@ -6,16 +6,10 @@ programs.zsh = {
 
   shellAliases = {
     ll = "ls -l";
-    update = "sudo nixos-rebuild switch";
+    update = "$HOME/rebuild";
   };
   history = {
     size = 10000;
     path = "${config.xdg.dataHome}/zsh/history";
   };
-  oh-my-zsh = {
-    enable = true;
-    plugins = [ "git" "thefuck" ];
-    theme = "robbyrussell";
-  };
-
 };
