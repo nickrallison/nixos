@@ -22,11 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'config'
+       error: syntax error, unexpected ELLIPSIS, expecting '.' or '='
 
-       at /nix/store/ih2kkbvhc8i2jrdplwd75m0rycl92hsq-source/modules/home-manager/zsh.nix:15:17:
+       at /nix/store/i57wzmj8an54rpshb5lj8s5bn4yzp0gw-source/modules/home-manager/zsh.nix:2:11:
 
-           14|       size = 10000;
-           15|       path = "${config.xdg.dataHome}/zsh/history";
-             |                 ^
-           16|     };
+            1| # zsh.nix
+            2| { config  ... }
+             |           ^
+            3|
