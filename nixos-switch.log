@@ -22,11 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected ELLIPSIS, expecting '.' or '='
+       error: syntax error, unexpected '{', expecting ':' or '@'
 
-       at /nix/store/i57wzmj8an54rpshb5lj8s5bn4yzp0gw-source/modules/home-manager/zsh.nix:2:11:
+       at /nix/store/grqhkv592ysx1009lfpj9yisyw1azcaa-source/modules/home-manager/zsh.nix:4:1:
 
-            1| # zsh.nix
-            2| { config  ... }
-             |           ^
             3|
+            4| {
+             | ^
+            5|   programs.zsh = {

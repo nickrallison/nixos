@@ -1,5 +1,5 @@
 # zsh.nix
-{ config  ... }
+{ config, ... }
 
 {
   programs.zsh = {
