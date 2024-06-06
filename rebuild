@@ -3,7 +3,7 @@
 nixdir=$HOME/dotfiles/nixos
 
 pushd $nixdir
-vim . 
+hx . 
 sudo nixos-rebuild switch  --flake $nixdir#default
 # or 
 # sudo nixos-rebuild switch --flake $nixdir#nixos-desktop-vm
