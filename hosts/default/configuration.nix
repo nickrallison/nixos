@@ -5,11 +5,12 @@
 { config, pkgs, inputs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-    ];
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+
+    ../../modules/nixos/ripgrep.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -74,17 +75,16 @@
     isNormalUser = true;
     description = "nick";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
+    packages = with pkgs;
+      [
+        firefox
+        #  thunderbird
+      ];
   };
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
-    users = {
-      "nick" = import ./home.nix;
-    };
+    users = { "nick" = import ./home.nix; };
   };
 
   # Enable automatic login for the user.
