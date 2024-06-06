@@ -4,7 +4,10 @@
   pkgs,
   ...
 }: {
-  imports = [../../modules/home-manager/helix.nix];
+  imports = [
+    ../../modules/home-manager/helix.nix
+    ../../modules/home-manager/tmux.nix
+  ];
 
   home.username = "nick";
   home.homeDirectory = "/home/nick";
