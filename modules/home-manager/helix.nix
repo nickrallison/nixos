@@ -4,7 +4,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "autumn_night_transparent";
+      theme = "base16_terminal";
       editor = {
         cursor-shape = {
           normal = "block";
