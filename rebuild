@@ -3,7 +3,7 @@
 
 nixdir=$HOME/dotfiles/nixos
 
-# set -e
+set -e
 pushd $nixdir
 hx .
 alejandra . &>/dev/null

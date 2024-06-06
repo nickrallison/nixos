@@ -1,7 +1,7 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 error: syntax error, unexpected '=', expecting ';'
 
-       at /nix/store/shfy847kmcfx9fmaz4hl1hrn8n3id676-source/flake.nix:5:10:
+       at /nix/store/hpzcv33wh9f7q7299lzlncz306g6l5mm-source/flake.nix:5:10:
 
             4|
             5|   inputs = {
