@@ -24,7 +24,7 @@ error:
 
        error: syntax error, unexpected '{', expecting ':' or '@'
 
-       at /nix/store/grqhkv592ysx1009lfpj9yisyw1azcaa-source/modules/home-manager/zsh.nix:4:1:
+       at /nix/store/rnp4mj6v17p51vn5j37ml7p42b4v4id7-source/modules/home-manager/zsh.nix:4:1:
 
             3|
             4| {
