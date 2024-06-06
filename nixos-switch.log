@@ -1,25 +1,21 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: getting status of '/nix/store/0cni8frvy672qn42qvjpdp0k639qwmha-source/modules/home-manager/starship/starship.nix': No such file or directory
+these 6 derivations will be built:
+  /nix/store/y6wx3pgqxq8pr6n9v6lc1sp7a66q9pzs-home-manager-files.drv
+  /nix/store/lq32zijm9ccry3gcrx2xm8s2ihm2a0fp-home-manager-generation.drv
+  /nix/store/85p47jb4lmcdh8b05pjsp5m9zgjyg5ph-unit-home-manager-nick.service.drv
+  /nix/store/76yzj390m80zsn9aaxrzm23cn4zk7srq-system-units.drv
+  /nix/store/xqxm31dnw3fx6hb8bay76cq8k289g2nz-etc.drv
+  /nix/store/s78g04zlbmfsyr4mrcq47cadkm34mab8-nixos-system-nixos-24.11.20240531.57610d2.drv
+building '/nix/store/y6wx3pgqxq8pr6n9v6lc1sp7a66q9pzs-home-manager-files.drv'...
+building '/nix/store/lq32zijm9ccry3gcrx2xm8s2ihm2a0fp-home-manager-generation.drv'...
+building '/nix/store/85p47jb4lmcdh8b05pjsp5m9zgjyg5ph-unit-home-manager-nick.service.drv'...
+building '/nix/store/76yzj390m80zsn9aaxrzm23cn4zk7srq-system-units.drv'...
+building '/nix/store/xqxm31dnw3fx6hb8bay76cq8k289g2nz-etc.drv'...
+building '/nix/store/s78g04zlbmfsyr4mrcq47cadkm34mab8-nixos-system-nixos-24.11.20240531.57610d2.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for nick...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-nick.service
