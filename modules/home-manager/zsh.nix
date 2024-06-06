@@ -14,5 +14,8 @@
       size = 10000;
       path = "$ENV{HOME}/dotfiles/zsh/history";
     };
+    initExtra = ''
+    eval "$(starship init zsh)"
+    ''
   };
 }
