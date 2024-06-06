@@ -17,7 +17,7 @@ in {
     enable = true;
     shell = "${pkgs.zsh}/bin/zsh";
     shortcut = "Space";
-    escape-time = 10;
+    escapeTime = 10;
     mouse = true;
     terminal = "tmux-256color";
     historyLimit = 100000;
