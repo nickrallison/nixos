@@ -6,9 +6,9 @@
       add_newline = true;
       command_timeout = 500;
       continuation_prompt = "[∙](bright-black) ";
-      format = "[$user]$hostname$directory$line_break$character";
+      format = "\[$user\]$hostname$directory$line_break$character";
       user = {
-        format = "[$user]";
+        format = "\[$username\]";
       };
       right_format = "";
       scan_timeout = 30;
