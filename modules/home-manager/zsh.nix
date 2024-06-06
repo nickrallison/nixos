@@ -12,7 +12,7 @@
     };
     history = {
       size = 10000;
-      path = "${HOME}/dotfiles/zsh/history";
+      path = "$ENV{HOME}/dotfiles/zsh/history";
     };
   };
 }

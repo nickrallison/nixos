@@ -22,11 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'HOME'
+       error: undefined variable 'pkgs'
 
-       at /nix/store/wphg9sqc7n9k8s9dmg5mmvp767imxl2c-source/modules/home-manager/zsh.nix:15:17:
+       at /nix/store/grmfn6slfal1qbzbd4wx71pf4b1f0vf8-source/modules/home-manager/starship/starship.nix:5:16:
 
-           14|       size = 10000;
-           15|       path = "${HOME}/dotfiles/zsh/history";
-             |                 ^
-           16|     };
+            4|     enable = true;
+            5|     settings = pkgs.lib.importTOML ./starship.toml;
+             |                ^
+            6|   };
