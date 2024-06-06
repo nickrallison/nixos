@@ -24,9 +24,9 @@ error:
 
        error: syntax error, unexpected end of file, expecting '"'
 
-       at /nix/store/fa83l3vml48p8hxc7hkzd4ldzxc5bwjm-source/modules/home-manager/starship.nix:10:24:
+       at /nix/store/w7abwy4hkir5gi3wnqbfsrvy8mbl5pxm-source/modules/home-manager/starship.nix:10:24:
 
-            9|       format = "[$username@$hostname]($directory)$
+            9|       format = "[$username@$hostname]($directory)$$;
            10|       right_format = "";
              |                        ^
            11|       scan_timeout = 30;
