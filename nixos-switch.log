@@ -1,48 +1,25 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-these 9 derivations will be built:
-  /nix/store/p1rj0pk3a0qzj174r626h8q6lb2q9a0f-home-manager-path.drv
-  /nix/store/487arix8p8pzcl17as0970zy97a6j9gm-activation-script.drv
-  /nix/store/hh6z73zdj8fp718p1y1xf5p14ypvj3dz-hm_.zshrc.drv
-  /nix/store/pckiwfr8q3x0c5d36syaj7f9iaqbs6g0-home-manager-files.drv
-  /nix/store/5wfifny84yxn1yvdakhj6znqxxd3nra6-home-manager-generation.drv
-  /nix/store/99x8kwg5y0zqaai8grvidazrk0rnn4py-unit-home-manager-nick.service.drv
-  /nix/store/wrpymr5fwyhhs9wqw0jlbwf1jmgb1ksq-system-units.drv
-  /nix/store/5yxylkqvkrikrb9lqys71s6x4k391jzh-etc.drv
-  /nix/store/bzmyac1syzq81iwczrdfq3rm4v6cldz5-nixos-system-nixos-24.11.20240531.57610d2.drv
-building '/nix/store/p1rj0pk3a0qzj174r626h8q6lb2q9a0f-home-manager-path.drv'...
-building '/nix/store/hh6z73zdj8fp718p1y1xf5p14ypvj3dz-hm_.zshrc.drv'...
-building '/nix/store/pckiwfr8q3x0c5d36syaj7f9iaqbs6g0-home-manager-files.drv'...
-building '/nix/store/487arix8p8pzcl17as0970zy97a6j9gm-activation-script.drv'...
-building '/nix/store/5wfifny84yxn1yvdakhj6znqxxd3nra6-home-manager-generation.drv'...
-building '/nix/store/99x8kwg5y0zqaai8grvidazrk0rnn4py-unit-home-manager-nick.service.drv'...
-building '/nix/store/wrpymr5fwyhhs9wqw0jlbwf1jmgb1ksq-system-units.drv'...
-building '/nix/store/5yxylkqvkrikrb9lqys71s6x4k391jzh-etc.drv'...
-building '/nix/store/bzmyac1syzq81iwczrdfq3rm4v6cldz5-nixos-system-nixos-24.11.20240531.57610d2.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
-warning: the following units failed: home-manager-nick.service
+error:
+       … while calling the 'head' builtin
 
-× home-manager-nick.service - Home Manager environment for nick
-     Loaded: loaded (/etc/systemd/system/home-manager-nick.service; enabled; preset: enabled)
-     Active: failed (Result: exit-code) since Thu 2024-06-06 15:59:24 MDT; 70ms ago
-   Duration: 1h 32min 49.517s
-    Process: 60788 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/qk73d5dvkpv8zax5q1jsxxhrrpyx36fr-home-manager-generation (code=exited, status=1/FAILURE)
-   Main PID: 60788 (code=exited, status=1/FAILURE)
-         IP: 0B in, 0B out
-        CPU: 111ms
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
 
-Jun 06 15:59:24 nixos hm-activate-nick[60878]: Please do one of the following:
-Jun 06 15:59:24 nixos hm-activate-nick[60878]: - Move or remove the above files and try again.
-Jun 06 15:59:24 nixos hm-activate-nick[60878]: - In standalone mode, use 'home-manager switch -b backup' to back up
-Jun 06 15:59:24 nixos hm-activate-nick[60878]:   files automatically.
-Jun 06 15:59:24 nixos hm-activate-nick[60878]: - When used as a NixOS or nix-darwin module, set
-Jun 06 15:59:24 nixos hm-activate-nick[60878]:     'home-manager.backupFileExtension'
-Jun 06 15:59:24 nixos hm-activate-nick[60878]:   to, for example, 'backup' and rebuild.
-Jun 06 15:59:24 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
-Jun 06 15:59:24 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
-Jun 06 15:59:24 nixos systemd[1]: Failed to start Home Manager environment for nick.
-warning: error(s) occurred while switching to the new configuration
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: getting status of '/nix/store/4adsy8jcbqyx8qanyd184xrfxlkj4d10-source/modules/home-manager/starship.toml': No such file or directory
