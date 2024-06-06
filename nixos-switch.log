@@ -1,25 +1,25 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-these 8 derivations will be built:
-  /nix/store/psy4qdyw3nn553ar92mr6w0mfs4np697-home-manager-path.drv
-  /nix/store/0r0r44mi9gdnjmahnnq0yfc4q4gp3hbl-activation-script.drv
-  /nix/store/hzncswyfm0lbb0xk637gjffnk1nrd8ka-home-manager-files.drv
-  /nix/store/5c5nf9mw7hsw283lxp4sy99nln9ji52l-home-manager-generation.drv
-  /nix/store/md8z32h7qlq5jwznlyrmq79j0zzswqsm-unit-home-manager-nick.service.drv
-  /nix/store/z0dm95rg3lfmz34v4yawnvvmkl679xvz-system-units.drv
-  /nix/store/jxss15dm1n6p020qy0z75xb9njzdww46-etc.drv
-  /nix/store/3jq8mzbl1jqw0g8llxa5blcymm9vv1bb-nixos-system-nixos-24.11.20240531.57610d2.drv
-building '/nix/store/hzncswyfm0lbb0xk637gjffnk1nrd8ka-home-manager-files.drv'...
-building '/nix/store/psy4qdyw3nn553ar92mr6w0mfs4np697-home-manager-path.drv'...
-building '/nix/store/0r0r44mi9gdnjmahnnq0yfc4q4gp3hbl-activation-script.drv'...
-building '/nix/store/5c5nf9mw7hsw283lxp4sy99nln9ji52l-home-manager-generation.drv'...
-building '/nix/store/md8z32h7qlq5jwznlyrmq79j0zzswqsm-unit-home-manager-nick.service.drv'...
-building '/nix/store/z0dm95rg3lfmz34v4yawnvvmkl679xvz-system-units.drv'...
-building '/nix/store/jxss15dm1n6p020qy0z75xb9njzdww46-etc.drv'...
-building '/nix/store/3jq8mzbl1jqw0g8llxa5blcymm9vv1bb-nixos-system-nixos-24.11.20240531.57610d2.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-nick.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: getting status of '/nix/store/hgckcb7vvp1xqcc1h18s96kjn3fbd2mc-source/modules/home-manager/starship.nix': No such file or directory
