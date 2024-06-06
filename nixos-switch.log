@@ -1,7 +1,9 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-building the system configuration...
-warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
+error: syntax error, unexpected '=', expecting ';'
+
+       at /nix/store/shfy847kmcfx9fmaz4hl1hrn8n3id676-source/flake.nix:5:10:
+
+            4|
+            5|   inputs = {
+             |          ^
+            6|     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
