@@ -22,10 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected '=', expecting end of file
+       error: undefined variable 'config'
 
-       at /nix/store/hivqwx89bggkf7lbikq5fdayib0j7krd-source/modules/home-manager/zsh.nix:1:14:
+       at /nix/store/ih2kkbvhc8i2jrdplwd75m0rycl92hsq-source/modules/home-manager/zsh.nix:15:17:
 
-            1| programs.zsh = {
-             |              ^
-            2|   enable = true;
+           14|       size = 10000;
+           15|       path = "${config.xdg.dataHome}/zsh/history";
+             |                 ^
+           16|     };

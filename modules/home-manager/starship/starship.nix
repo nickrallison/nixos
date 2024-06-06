@@ -1,4 +1,7 @@
-programs.starship = {
-  enable = true;
-  settings = pkgs.lib.importTOML ./starship.toml;
-};
+# starship.nix
+{
+  programs.starship = {
+    enable = true;
+    settings = pkgs.lib.importTOML ./starship.toml;
+  };
+}
