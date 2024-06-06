@@ -84,7 +84,7 @@
     specialArgs = { inherit inputs; };
     users = {
       "nick" = import ./home.nix;
-    }
+    };
   };
 
   # Enable automatic login for the user.
