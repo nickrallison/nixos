@@ -26,7 +26,7 @@
 
   # Manage env vars
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    STARSHIP_CONFIG = "../../modules/home-manager/starship/starship.toml";
   };
 
   # Let Home Manager install and manage itself.
