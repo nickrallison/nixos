@@ -22,10 +22,9 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected '=', expecting end of file
-
-       at /nix/store/1vpp8zms4141rwrn4k89xq5kq84vw4ww-source/modules/home-manager/starship.nix:1:21:
-
-            1|   programs.starship = {
-             |                     ^
-            2|       enable = true;
+       error: A definition for option `home-manager.users.nick.programs.starship.settings.c.commands."[definition 1-entry 1]"' is not of type `boolean or signed integer or string or attribute set of (boolean or signed integer or string)'. Definition values:
+       - In `/nix/store/rn4kfmq2ppy38c3zxx654pzc5si8vxxr-source/modules/home-manager/starship.nix':
+           [
+             "cc"
+             "--version"
+           ]
