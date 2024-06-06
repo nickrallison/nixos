@@ -1,30 +1,27 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: A definition for option `home-manager.users.nick.programs.starship.settings.c.commands."[definition 1-entry 1]"' is not of type `boolean or signed integer or string or attribute set of (boolean or signed integer or string)'. Definition values:
-       - In `/nix/store/rn4kfmq2ppy38c3zxx654pzc5si8vxxr-source/modules/home-manager/starship.nix':
-           [
-             "cc"
-             "--version"
-           ]
+warning: error: unable to download 'https://cache.nixos.org/47b5b4x6iqha37g4chk7zl804z7cqqcf.narinfo': Couldn't resolve host name (6); retrying in 257 ms
+warning: error: unable to download 'https://cache.nixos.org/47b5b4x6iqha37g4chk7zl804z7cqqcf.narinfo': Couldn't resolve host name (6); retrying in 665 ms
+warning: error: unable to download 'https://cache.nixos.org/47b5b4x6iqha37g4chk7zl804z7cqqcf.narinfo': Couldn't resolve host name (6); retrying in 1105 ms
+warning: error: unable to download 'https://cache.nixos.org/47b5b4x6iqha37g4chk7zl804z7cqqcf.narinfo': Couldn't resolve host name (6); retrying in 2089 ms
+these 7 derivations will be built:
+  /nix/store/2hd5c15ip4b1jbfxyjnxqgkabhwp0pfl-starship-config.drv
+  /nix/store/6lj7dw13cdszyplcmqdgbm951567z388-home-manager-files.drv
+  /nix/store/2cbsfs04jj8rx3yj0msc3m7qkxqd6igs-home-manager-generation.drv
+  /nix/store/kn5lbjlcvib7fg3kvrz071vkr45lp4yg-unit-home-manager-nick.service.drv
+  /nix/store/phs74br4f3m512pclwdpcgj3r5m7h9z4-system-units.drv
+  /nix/store/n5czhnnrh2mpnm04pdad50x2glj6xn3p-etc.drv
+  /nix/store/rg674aw8a1r6r1sivhy6ff4r8bcqwby9-nixos-system-nixos-24.11.20240531.57610d2.drv
+building '/nix/store/2hd5c15ip4b1jbfxyjnxqgkabhwp0pfl-starship-config.drv'...
+building '/nix/store/6lj7dw13cdszyplcmqdgbm951567z388-home-manager-files.drv'...
+building '/nix/store/2cbsfs04jj8rx3yj0msc3m7qkxqd6igs-home-manager-generation.drv'...
+building '/nix/store/kn5lbjlcvib7fg3kvrz071vkr45lp4yg-unit-home-manager-nick.service.drv'...
+building '/nix/store/phs74br4f3m512pclwdpcgj3r5m7h9z4-system-units.drv'...
+building '/nix/store/n5czhnnrh2mpnm04pdad50x2glj6xn3p-etc.drv'...
+building '/nix/store/rg674aw8a1r6r1sivhy6ff4r8bcqwby9-nixos-system-nixos-24.11.20240531.57610d2.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for nick...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-nick.service
