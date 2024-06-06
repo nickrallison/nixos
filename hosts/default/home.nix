@@ -27,6 +27,7 @@
   # Manage env vars
   home.sessionVariables = {
     STARSHIP_CONFIG = "../../modules/home-manager/starship/starship.toml";
+    TEST_VAR = "yes";
   };
 
   # Let Home Manager install and manage itself.
