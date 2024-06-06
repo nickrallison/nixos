@@ -16,6 +16,9 @@ in {
   programs.tmux = {
     enable = true;
     shell = "${pkgs.zsh}/bin/zsh";
+    shortcut = "Space";
+    escape-time = 10;
+    mouse = true;
     terminal = "tmux-256color";
     historyLimit = 100000;
     plugins = with pkgs; [
@@ -26,12 +29,6 @@ in {
       tmuxPlugins.better-mouse-mode
     ];
     extraConfig = ''
-      unbind C-b
-      set -g prefix C-Space
-      bind C-Space send-prefix
-
-      set -sg escape-time 10
-      set -g mouse on
     '';
   };
 }

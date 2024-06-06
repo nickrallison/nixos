@@ -1,26 +1,26 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-these 7 derivations will be built:
-  /nix/store/nig0wrjg9l740smn5mhna9gbf1x2pc0n-hm_tmuxtmux.conf.drv
-  /nix/store/7pxiw7kspwbzmvjszl0p54q20y6li4mh-home-manager-files.drv
-  /nix/store/zkd27ifx7sa5l3nyj52i9hv0z16jn55b-home-manager-generation.drv
-  /nix/store/rj05m42qr51iwwdvdyshkabqxmlnb4h8-unit-home-manager-nick.service.drv
-  /nix/store/vwrbcrlwi437f04fry08kkkgl3dnn7xd-system-units.drv
-  /nix/store/p103lwsyh4hwj8mkq0j0capngl69lk0z-etc.drv
-  /nix/store/kcj1qrhmpi7qbw6b2aym6rrx648w9p0q-nixos-system-nixos-24.11.20240531.57610d2.drv
-this path will be fetched (1.70 MiB download, 6.86 MiB unpacked):
-  /nix/store/0cniblp3hq5hkx0b3fx25n94i89p54as-zsh-5.9
-copying path '/nix/store/0cniblp3hq5hkx0b3fx25n94i89p54as-zsh-5.9' from 'https://cache.nixos.org'...
-building '/nix/store/nig0wrjg9l740smn5mhna9gbf1x2pc0n-hm_tmuxtmux.conf.drv'...
-building '/nix/store/7pxiw7kspwbzmvjszl0p54q20y6li4mh-home-manager-files.drv'...
-building '/nix/store/zkd27ifx7sa5l3nyj52i9hv0z16jn55b-home-manager-generation.drv'...
-building '/nix/store/rj05m42qr51iwwdvdyshkabqxmlnb4h8-unit-home-manager-nick.service.drv'...
-building '/nix/store/vwrbcrlwi437f04fry08kkkgl3dnn7xd-system-units.drv'...
-building '/nix/store/p103lwsyh4hwj8mkq0j0capngl69lk0z-etc.drv'...
-building '/nix/store/kcj1qrhmpi7qbw6b2aym6rrx648w9p0q-nixos-system-nixos-24.11.20240531.57610d2.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-nick.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: The option `home-manager.users.nick.programs.tmux.escape-time' does not exist. Definition values:
+       - In `/nix/store/zldsfsd7yh31mqngpvgsjgq9qfvbl42y-source/modules/home-manager/tmux.nix': 10
