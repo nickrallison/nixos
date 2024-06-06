@@ -6,7 +6,7 @@
       add_newline = true;
       command_timeout = 500;
       continuation_prompt = "[∙](bright-black) ";
-      format = "[$username@$hostname]($directory)$$";
+      format = "[[$username@$hostname](yellow)([$directory](blue))[❯](white)";
       right_format = "";
       scan_timeout = 30;
     };
