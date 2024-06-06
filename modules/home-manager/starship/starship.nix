@@ -3,6 +3,7 @@
     enable = true;
     # settings = pkgs.lib.importTOML ../starship.toml;
     settings = {
+      format = "[$username](yellow)";
       time = {
         disabled = false;
         format = "🕙[\\[$time\\]]($style) ";
