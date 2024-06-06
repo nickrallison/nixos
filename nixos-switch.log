@@ -22,4 +22,4 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: getting status of '/nix/store/hgckcb7vvp1xqcc1h18s96kjn3fbd2mc-source/modules/home-manager/starship.nix': No such file or directory
+       error: getting status of '/nix/store/zzbkp3lm87ss94gjz09j76il7vq8gpcv-source/hosts/default/modules': No such file or directory
