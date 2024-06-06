@@ -4,7 +4,7 @@ nixdir=$HOME/dotfiles/nixos
 
 pushd $nixdir
 vim . 
-sudo nixos-rebuild switch --flake $nixdir#default
+sudo nixos-rebuild switch --impure --flake $nixdir#default
 
 gen=$(nixos-rebuild list-generations | grep current)
 git add .
