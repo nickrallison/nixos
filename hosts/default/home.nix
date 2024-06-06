@@ -7,7 +7,7 @@
   imports = [
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/tmux.nix
-    ../../modules/home-manager/zsh.nix
+    # ../../modules/home-manager/zsh.nix
     # ../../modules/home-manager/starship/starship.nix
   ];
 
