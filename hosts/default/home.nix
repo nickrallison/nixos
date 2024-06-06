@@ -5,10 +5,10 @@
   ...
 }: {
   imports = [
-    ./modules/home-manager/helix.nix
-    ./modules/home-manager/tmux.nix
+    ../../modules/home-manager/helix.nix
+    ../../modules/home-manager/tmux.nix
     # ../../modules/home-manager/zsh.nix
-    ./modules/home-manager/starship.nix
+    ../../modules/home-manager/starship.nix
   ];
 
   home.username = "nick";

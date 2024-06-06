@@ -1,25 +1,7 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: getting status of '/nix/store/zzbkp3lm87ss94gjz09j76il7vq8gpcv-source/hosts/default/modules': No such file or directory
+activating the configuration...
+setting up /etc...
+reloading user units for nick...
+restarting sysinit-reactivation.target
