@@ -2,6 +2,7 @@
 
 nixdir=$HOME/dotfiles/nixos
 
+set -e
 pushd $nixdir
 hx . 
 sudo nixos-rebuild switch  --flake $nixdir#default
