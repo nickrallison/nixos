@@ -15,7 +15,7 @@
 in {
   programs.tmux = {
     enable = true;
-    shell = "${pkgs.zsh}/bin/zsh";
+    shell = "${pkgs.bash}/bin/bash";
     shortcut = "Space";
     escapeTime = 10;
     mouse = true;
