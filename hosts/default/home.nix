@@ -8,7 +8,7 @@
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/tmux.nix
     # ../../modules/home-manager/zsh.nix
-    ../../modules/home-manager/starship.nix
+    ../../modules/home-manager/starship/starship.nix
   ];
 
   home.username = "nick";
@@ -20,17 +20,9 @@
 
   # Manage dotfiles
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
-
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
   };
+
+  xdg.configFile."starship.toml".source = ../../modules/home-manager/starship/starship.toml;
 
   # Manage env vars
   home.sessionVariables = {
