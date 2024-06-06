@@ -3,7 +3,7 @@
     enable = true;
     # settings = pkgs.lib.importTOML ../starship.toml;
     settings = {
-      format = "[\\[$useridtemp\\]](yellow)[$directory](blue)$line_break$character";
+      format = "[\\[\$\{custom.useridtemp\}\\]](yellow)[$directory](blue)$line_break$character";
       time = {
         disabled = false;
         format = "🕙[\\[$time\\]]($style) ";
