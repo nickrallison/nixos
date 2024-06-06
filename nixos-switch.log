@@ -1,21 +1,6 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-these 7 derivations will be built:
-  /nix/store/4v5ml5zb8qcaicijkyw84gl43xksh0f7-starship-config.drv
-  /nix/store/dskfk16fjz9k3shsibisp18wy4sfapyx-home-manager-files.drv
-  /nix/store/26p8smbv3gi9j012r6ch6vfws3kmm9vc-home-manager-generation.drv
-  /nix/store/if7b4cm6wy0qml5m8vslngjf4q27mlma-unit-home-manager-nick.service.drv
-  /nix/store/xlddf3g9gcpviy13jpyxw1l16h6p5fwi-system-units.drv
-  /nix/store/a29mf4czpw04j2ikyf0vhv3zhkgfzzsg-etc.drv
-  /nix/store/dpprc4p8cndnlb1g8nvcccsav0rhjaix-nixos-system-nixos-24.11.20240531.57610d2.drv
-building '/nix/store/4v5ml5zb8qcaicijkyw84gl43xksh0f7-starship-config.drv'...
-building '/nix/store/dskfk16fjz9k3shsibisp18wy4sfapyx-home-manager-files.drv'...
-building '/nix/store/26p8smbv3gi9j012r6ch6vfws3kmm9vc-home-manager-generation.drv'...
-building '/nix/store/if7b4cm6wy0qml5m8vslngjf4q27mlma-unit-home-manager-nick.service.drv'...
-building '/nix/store/xlddf3g9gcpviy13jpyxw1l16h6p5fwi-system-units.drv'...
-building '/nix/store/a29mf4czpw04j2ikyf0vhv3zhkgfzzsg-etc.drv'...
-building '/nix/store/dpprc4p8cndnlb1g8nvcccsav0rhjaix-nixos-system-nixos-24.11.20240531.57610d2.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for nick...
@@ -24,21 +9,21 @@ warning: the following units failed: home-manager-nick.service
 
 × home-manager-nick.service - Home Manager environment for nick
      Loaded: loaded (/etc/systemd/system/home-manager-nick.service; enabled; preset: enabled)
-     Active: failed (Result: exit-code) since Thu 2024-06-06 16:12:02 MDT; 60ms ago
+     Active: failed (Result: exit-code) since Thu 2024-06-06 16:13:22 MDT; 65ms ago
    Duration: 1h 32min 49.517s
-    Process: 63633 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/h340fxc9rm98pd0wb0mdmh9fik2ny6an-home-manager-generation (code=exited, status=1/FAILURE)
-   Main PID: 63633 (code=exited, status=1/FAILURE)
+    Process: 64591 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/qk73d5dvkpv8zax5q1jsxxhrrpyx36fr-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 64591 (code=exited, status=1/FAILURE)
          IP: 0B in, 0B out
         CPU: 107ms
 
-Jun 06 16:12:02 nixos hm-activate-nick[63723]: Please do one of the following:
-Jun 06 16:12:02 nixos hm-activate-nick[63723]: - Move or remove the above files and try again.
-Jun 06 16:12:02 nixos hm-activate-nick[63723]: - In standalone mode, use 'home-manager switch -b backup' to back up
-Jun 06 16:12:02 nixos hm-activate-nick[63723]:   files automatically.
-Jun 06 16:12:02 nixos hm-activate-nick[63723]: - When used as a NixOS or nix-darwin module, set
-Jun 06 16:12:02 nixos hm-activate-nick[63723]:     'home-manager.backupFileExtension'
-Jun 06 16:12:02 nixos hm-activate-nick[63723]:   to, for example, 'backup' and rebuild.
-Jun 06 16:12:02 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
-Jun 06 16:12:02 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
-Jun 06 16:12:02 nixos systemd[1]: Failed to start Home Manager environment for nick.
+Jun 06 16:13:22 nixos hm-activate-nick[64680]: Please do one of the following:
+Jun 06 16:13:22 nixos hm-activate-nick[64680]: - Move or remove the above files and try again.
+Jun 06 16:13:22 nixos hm-activate-nick[64680]: - In standalone mode, use 'home-manager switch -b backup' to back up
+Jun 06 16:13:22 nixos hm-activate-nick[64680]:   files automatically.
+Jun 06 16:13:22 nixos hm-activate-nick[64680]: - When used as a NixOS or nix-darwin module, set
+Jun 06 16:13:22 nixos hm-activate-nick[64680]:     'home-manager.backupFileExtension'
+Jun 06 16:13:22 nixos hm-activate-nick[64680]:   to, for example, 'backup' and rebuild.
+Jun 06 16:13:22 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
+Jun 06 16:13:22 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
+Jun 06 16:13:22 nixos systemd[1]: Failed to start Home Manager environment for nick.
 warning: error(s) occurred while switching to the new configuration
