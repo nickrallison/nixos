@@ -14,7 +14,7 @@
 
   outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations = {
-      default = nicpkgs.lib.nixosSystem {
+      default = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs;};
         modules = [
           ./hosts/default/configuration.nix
