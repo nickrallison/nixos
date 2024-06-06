@@ -1,5 +1,4 @@
 # helix.nix
-
 {
   programs.helix = {
     enable = true;
@@ -11,15 +10,15 @@
           insert = "bar";
           select = "underline";
         };
-        whitespace = { render = "all"; };
+        whitespace = {render = "all";};
         true-color = true;
       };
     };
-    languages.language = [{ name = "nix"; }];
+    languages.language = [{name = "nix";}];
     themes = {
       autumn_night_transparent = {
         "inherits" = "autumn_night";
-        "ui.background" = { };
+        "ui.background" = {};
       };
     };
   };

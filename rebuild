@@ -1,16 +1,22 @@
 #!/bin/sh
+# rebuild
 
 nixdir=$HOME/dotfiles/nixos
 
 set -e
 pushd $nixdir
-hx . 
-sudo nixos-rebuild switch  --flake $nixdir#default
-# or 
+hx .
+alejandra . &>/dev/null
+git diff -U0 *.nix
+echo "NixOS Rebuilding"
+sudo nixos-rebuild switch --flake $nixdir#default &>nixos-switch.log || (
+	cat nixos-switch.log | grep --color error && false)
+# or this for other flakes
 # sudo nixos-rebuild switch --flake $nixdir#nixos-desktop-vm
 
 gen=$(nixos-rebuild list-generations | grep current)
+date=$(date)
 git add .
-git commit -m "$gen"
+git commit -m "$gen_$date"
 git push
 popd
