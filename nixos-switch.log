@@ -22,11 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected '{', expecting ':' or '@'
+       error: undefined variable 'HOME'
 
-       at /nix/store/rnp4mj6v17p51vn5j37ml7p42b4v4id7-source/modules/home-manager/zsh.nix:4:1:
+       at /nix/store/wphg9sqc7n9k8s9dmg5mmvp767imxl2c-source/modules/home-manager/zsh.nix:15:17:
 
-            3|
-            4| {
-             | ^
-            5|   programs.zsh = {
+           14|       size = 10000;
+           15|       path = "${HOME}/dotfiles/zsh/history";
+             |                 ^
+           16|     };
