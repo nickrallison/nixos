@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }
+# helix.nix
 
 {
   programs.helix = {
