@@ -59,13 +59,16 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.nick = {
-    isNormalUser = true;
-    description = "nick";
-    extraGroups = ["networkmanager" "wheel"];
-    packages = with pkgs; [
-      firefox
-    ];
+  users = {
+    defaultUserShell = pkgs.zsh;
+    users.nick = {
+      isNormalUser = true;
+      description = "nick";
+      extraGroups = ["networkmanager" "wheel"];
+      packages = with pkgs; [
+        firefox
+      ];
+    };
   };
 
   home-manager = {
@@ -84,8 +87,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # List packages installed in system profile
   environment.systemPackages = with pkgs; [
     # Basic System Packages
     vim
@@ -98,6 +100,9 @@
     # Dev
     alejandra
   ];
+
+  # zsh
+  programs.zsh.enable = true;
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
