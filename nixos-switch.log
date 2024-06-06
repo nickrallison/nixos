@@ -1,62 +1,48 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-these 11 derivations will be built:
-  /nix/store/mnkm13df46r61vr88mqvfyandgxfvkxg-home-manager-path.drv
-  /nix/store/4yx3r8lwbs02lj11asgrjmi882zl2par-activation-script.drv
-  /nix/store/145dglwjhv1mapapkpws6yrwrrcz2whf-starship-config.drv
-  /nix/store/49lyiv62962s6nq0790qs97xrch810d8-hm_.zshrc.drv
-  /nix/store/qjk1m7d3xwhlrb6ppp0wr1as9fyk172w-hm_.zshenv.drv
-  /nix/store/9ailrfb2q616474n3ai37911lnbbk16v-home-manager-files.drv
-  /nix/store/0s21cx84h9pp6yd5vw8q2ny6x5cjk6f1-home-manager-generation.drv
-  /nix/store/sq585bmvkcw2vs0i1bndf0zd0zmmqchj-unit-home-manager-nick.service.drv
-  /nix/store/arinmw235lvng21jxrq8x4vncyjkpk53-system-units.drv
-  /nix/store/fpwl2p4dkpgbbvb83ihds5v00xm7gx89-etc.drv
-  /nix/store/zi5nmk9b43jafd7agbr12zngrwkkxs31-nixos-system-nixos-24.11.20240531.57610d2.drv
-these 3 paths will be fetched (2.95 MiB download, 11.17 MiB unpacked):
-  /nix/store/5fyfyvp22k4nv3370mrjd6pwislskg56-starship-1.19.0
-  /nix/store/jvzhqm4yl17pdsj8dc9m5dxcifv7v5j4-zsh-autosuggestions-0.7.0
-  /nix/store/0mc59h4gh9aswdq9pmwwqrxccink2nw8-zsh-syntax-highlighting-0.8.0
-copying path '/nix/store/jvzhqm4yl17pdsj8dc9m5dxcifv7v5j4-zsh-autosuggestions-0.7.0' from 'https://cache.nixos.org'...
-copying path '/nix/store/0mc59h4gh9aswdq9pmwwqrxccink2nw8-zsh-syntax-highlighting-0.8.0' from 'https://cache.nixos.org'...
-copying path '/nix/store/5fyfyvp22k4nv3370mrjd6pwislskg56-starship-1.19.0' from 'https://cache.nixos.org'...
-building '/nix/store/qjk1m7d3xwhlrb6ppp0wr1as9fyk172w-hm_.zshenv.drv'...
-building '/nix/store/145dglwjhv1mapapkpws6yrwrrcz2whf-starship-config.drv'...
-building '/nix/store/49lyiv62962s6nq0790qs97xrch810d8-hm_.zshrc.drv'...
-building '/nix/store/9ailrfb2q616474n3ai37911lnbbk16v-home-manager-files.drv'...
-building '/nix/store/mnkm13df46r61vr88mqvfyandgxfvkxg-home-manager-path.drv'...
-building '/nix/store/4yx3r8lwbs02lj11asgrjmi882zl2par-activation-script.drv'...
-building '/nix/store/0s21cx84h9pp6yd5vw8q2ny6x5cjk6f1-home-manager-generation.drv'...
-building '/nix/store/sq585bmvkcw2vs0i1bndf0zd0zmmqchj-unit-home-manager-nick.service.drv'...
-building '/nix/store/arinmw235lvng21jxrq8x4vncyjkpk53-system-units.drv'...
-building '/nix/store/fpwl2p4dkpgbbvb83ihds5v00xm7gx89-etc.drv'...
-building '/nix/store/zi5nmk9b43jafd7agbr12zngrwkkxs31-nixos-system-nixos-24.11.20240531.57610d2.drv'...
+these 9 derivations will be built:
+  /nix/store/p1rj0pk3a0qzj174r626h8q6lb2q9a0f-home-manager-path.drv
+  /nix/store/487arix8p8pzcl17as0970zy97a6j9gm-activation-script.drv
+  /nix/store/hh6z73zdj8fp718p1y1xf5p14ypvj3dz-hm_.zshrc.drv
+  /nix/store/pckiwfr8q3x0c5d36syaj7f9iaqbs6g0-home-manager-files.drv
+  /nix/store/5wfifny84yxn1yvdakhj6znqxxd3nra6-home-manager-generation.drv
+  /nix/store/99x8kwg5y0zqaai8grvidazrk0rnn4py-unit-home-manager-nick.service.drv
+  /nix/store/wrpymr5fwyhhs9wqw0jlbwf1jmgb1ksq-system-units.drv
+  /nix/store/5yxylkqvkrikrb9lqys71s6x4k391jzh-etc.drv
+  /nix/store/bzmyac1syzq81iwczrdfq3rm4v6cldz5-nixos-system-nixos-24.11.20240531.57610d2.drv
+building '/nix/store/p1rj0pk3a0qzj174r626h8q6lb2q9a0f-home-manager-path.drv'...
+building '/nix/store/hh6z73zdj8fp718p1y1xf5p14ypvj3dz-hm_.zshrc.drv'...
+building '/nix/store/pckiwfr8q3x0c5d36syaj7f9iaqbs6g0-home-manager-files.drv'...
+building '/nix/store/487arix8p8pzcl17as0970zy97a6j9gm-activation-script.drv'...
+building '/nix/store/5wfifny84yxn1yvdakhj6znqxxd3nra6-home-manager-generation.drv'...
+building '/nix/store/99x8kwg5y0zqaai8grvidazrk0rnn4py-unit-home-manager-nick.service.drv'...
+building '/nix/store/wrpymr5fwyhhs9wqw0jlbwf1jmgb1ksq-system-units.drv'...
+building '/nix/store/5yxylkqvkrikrb9lqys71s6x4k391jzh-etc.drv'...
+building '/nix/store/bzmyac1syzq81iwczrdfq3rm4v6cldz5-nixos-system-nixos-24.11.20240531.57610d2.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for nick...
 restarting sysinit-reactivation.target
-restarting the following units: home-manager-nick.service
-Job for home-manager-nick.service failed because the control process exited with error code.
-See "systemctl status home-manager-nick.service" and "journalctl -xeu home-manager-nick.service" for details.
 warning: the following units failed: home-manager-nick.service
 
 × home-manager-nick.service - Home Manager environment for nick
      Loaded: loaded (/etc/systemd/system/home-manager-nick.service; enabled; preset: enabled)
-     Active: failed (Result: exit-code) since Thu 2024-06-06 15:57:42 MDT; 64ms ago
+     Active: failed (Result: exit-code) since Thu 2024-06-06 15:59:24 MDT; 70ms ago
    Duration: 1h 32min 49.517s
-    Process: 58563 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/k829rd1jyp5cvd3hkk4bcxpd8a72ya69-home-manager-generation (code=exited, status=1/FAILURE)
-   Main PID: 58563 (code=exited, status=1/FAILURE)
+    Process: 60788 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/qk73d5dvkpv8zax5q1jsxxhrrpyx36fr-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 60788 (code=exited, status=1/FAILURE)
          IP: 0B in, 0B out
-        CPU: 110ms
+        CPU: 111ms
 
-Jun 06 15:57:42 nixos hm-activate-nick[58651]: Please do one of the following:
-Jun 06 15:57:42 nixos hm-activate-nick[58651]: - Move or remove the above files and try again.
-Jun 06 15:57:42 nixos hm-activate-nick[58651]: - In standalone mode, use 'home-manager switch -b backup' to back up
-Jun 06 15:57:42 nixos hm-activate-nick[58651]:   files automatically.
-Jun 06 15:57:42 nixos hm-activate-nick[58651]: - When used as a NixOS or nix-darwin module, set
-Jun 06 15:57:42 nixos hm-activate-nick[58651]:     'home-manager.backupFileExtension'
-Jun 06 15:57:42 nixos hm-activate-nick[58651]:   to, for example, 'backup' and rebuild.
-Jun 06 15:57:42 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
-Jun 06 15:57:42 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
-Jun 06 15:57:42 nixos systemd[1]: Failed to start Home Manager environment for nick.
+Jun 06 15:59:24 nixos hm-activate-nick[60878]: Please do one of the following:
+Jun 06 15:59:24 nixos hm-activate-nick[60878]: - Move or remove the above files and try again.
+Jun 06 15:59:24 nixos hm-activate-nick[60878]: - In standalone mode, use 'home-manager switch -b backup' to back up
+Jun 06 15:59:24 nixos hm-activate-nick[60878]:   files automatically.
+Jun 06 15:59:24 nixos hm-activate-nick[60878]: - When used as a NixOS or nix-darwin module, set
+Jun 06 15:59:24 nixos hm-activate-nick[60878]:     'home-manager.backupFileExtension'
+Jun 06 15:59:24 nixos hm-activate-nick[60878]:   to, for example, 'backup' and rebuild.
+Jun 06 15:59:24 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
+Jun 06 15:59:24 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
+Jun 06 15:59:24 nixos systemd[1]: Failed to start Home Manager environment for nick.
 warning: error(s) occurred while switching to the new configuration
