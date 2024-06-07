@@ -22,5 +22,5 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: A definition for option `home-manager.users.nick.home.file.".zshrc".source' is not of type `path'. Definition values:
-       - In `/nix/store/ixppbj933cf4awzg4w9nhsbps014v0jv-source/hosts/default/configuration.nix': "../../modules/home-manager/zsh/zshrc"
+       error: A definition for option `home-manager.users.nick.home.file."/home/nick/.zshrc".source' is not of type `path'. Definition values:
+       - In `/nix/store/xnv9flnvqzr2fkjdrhfk5ypxv4qgi7cg-source/hosts/default/configuration.nix': "../../modules/home-manager/zsh/zshrc"
