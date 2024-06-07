@@ -20,7 +20,7 @@
 
   # Manage dotfiles
   home.file = {
-    ".zshrc".source = ../../modules/home-manager/zsh/zshrc;
+    "$HOME/.zshrc".source = ../../modules/home-manager/zsh/zshrc;
   };
 
   # xdg.configFile."starship.toml".source = ../../modules/home-manager/starship/starship.toml;
