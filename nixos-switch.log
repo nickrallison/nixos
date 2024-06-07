@@ -22,5 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: A definition for option `home-manager.users.nick.home.file."/home/nick/.zshrc".source' is not of type `path'. Definition values:
-       - In `/nix/store/xnv9flnvqzr2fkjdrhfk5ypxv4qgi7cg-source/hosts/default/configuration.nix': "../../modules/home-manager/zsh/zshrc"
+       error: syntax error, unexpected ';', expecting end of file
+
+       at /nix/store/zvb5kff28hlnp0q3zignkdqkrbaadrzf-source/hosts/default/home.nix:24:4:
+
+           23|     ".zshrc".source = ../../modules/home-manager/zsh/zshrc;
+           24|   };
+             |    ^
+           25|
