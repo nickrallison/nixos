@@ -22,11 +22,5 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: syntax error, unexpected '}', expecting ';'
-
-       at /nix/store/vxc6fam6x5qgqwiqmcbd93wk6mc9j2gk-source/hosts/default/home.nix:24:3:
-
-           23|     ".zshrc".source = "../../modules/home-manager/zsh/zshrc"
-           24|   };
-             |   ^
-           25|
+       error: A definition for option `home-manager.users.nick.home.file.".zshrc".source' is not of type `path'. Definition values:
+       - In `/nix/store/ixppbj933cf4awzg4w9nhsbps014v0jv-source/hosts/default/configuration.nix': "../../modules/home-manager/zsh/zshrc"
