@@ -1,23 +1,32 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-these 7 derivations will be built:
-  /nix/store/b4b5kgzp3ws2hy7wlbvklqlw3wv274yi-starship-config.drv
-  /nix/store/6zjr6b16qczvh8hdi2gq71rk5cc4rq86-home-manager-files.drv
-  /nix/store/2jccsaxq64xxkbwzsfk59wrir8rc4gbw-home-manager-generation.drv
-  /nix/store/0kzaxvq9mhg0q255axng7cny4393yck9-unit-home-manager-nick.service.drv
-  /nix/store/rf66k56havbj960z8igvxc199d0vlqla-system-units.drv
-  /nix/store/89jnj45rnyg5589c6wfqjqi9ip6yn22r-etc.drv
-  /nix/store/9kayw1sqh924nidjibbbdm51vz94z78f-nixos-system-nixos-24.11.20240531.57610d2.drv
-building '/nix/store/b4b5kgzp3ws2hy7wlbvklqlw3wv274yi-starship-config.drv'...
-building '/nix/store/6zjr6b16qczvh8hdi2gq71rk5cc4rq86-home-manager-files.drv'...
-building '/nix/store/2jccsaxq64xxkbwzsfk59wrir8rc4gbw-home-manager-generation.drv'...
-building '/nix/store/0kzaxvq9mhg0q255axng7cny4393yck9-unit-home-manager-nick.service.drv'...
-building '/nix/store/rf66k56havbj960z8igvxc199d0vlqla-system-units.drv'...
-building '/nix/store/89jnj45rnyg5589c6wfqjqi9ip6yn22r-etc.drv'...
-building '/nix/store/9kayw1sqh924nidjibbbdm51vz94z78f-nixos-system-nixos-24.11.20240531.57610d2.drv'...
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-nick.service
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: syntax error, unexpected '}', expecting ';'
+
+       at /nix/store/vxc6fam6x5qgqwiqmcbd93wk6mc9j2gk-source/hosts/default/home.nix:24:3:
+
+           23|     ".zshrc".source = "../../modules/home-manager/zsh/zshrc"
+           24|   };
+             |   ^
+           25|

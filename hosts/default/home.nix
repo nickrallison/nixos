@@ -8,7 +8,7 @@
     ../../modules/home-manager/helix.nix
     ../../modules/home-manager/tmux.nix
     # ../../modules/home-manager/zsh.nix
-    ../../modules/home-manager/starship/starship.nix
+    ../../modules/home-manager/starship.nix
   ];
 
   home.username = "nick";
@@ -20,6 +20,7 @@
 
   # Manage dotfiles
   home.file = {
+    ".zshrc".source = "../../modules/home-manager/zsh/zshrc"
   };
 
   # xdg.configFile."starship.toml".source = ../../modules/home-manager/starship/starship.toml;
