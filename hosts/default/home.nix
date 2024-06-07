@@ -19,7 +19,7 @@
   ];
 
   # Manage dotfiles
-  # home.file = {
+  home.file = {
     ".zshrc".source = ../../modules/home-manager/zsh/zshrc;
   };
 
