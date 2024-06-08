@@ -13,7 +13,6 @@
       clear
       if [[ "$TMUX" == "" ]]; then
         tmux new-session -A -s home
-      else
       fi
       neofetch
       eval "$(starship init zsh)"
