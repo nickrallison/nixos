@@ -10,6 +10,7 @@
           insert = "bar";
           select = "underline";
         };
+        auto-pairs = false;
         whitespace = {render = "all";};
         true-color = true;
       };

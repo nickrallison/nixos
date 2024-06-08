@@ -11,6 +11,9 @@
     prezto.tmux.defaultSessionName = "home";
     initExtra = ''
       clear
+      if [ "${TMUX}" == "" ]; then
+         tmux new-session -A -s mysession
+      fi
       neofetch
       eval "$(starship init zsh)"
     '';

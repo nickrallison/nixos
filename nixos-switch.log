@@ -1,8 +1,32 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/hqhd1l45bslw574z08br8bq9rxjnc83v-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
+
+         1574|         || pred here (elemAt values 1) (head values) then
+         1575|           head values
+             |           ^
+         1576|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: undefined variable 'TMUX'
+
+       at /nix/store/hmbvrxycha8rgwkh6xb7smw1h0qhnr2a-source/modules/home-manager/zsh.nix:14:15:
+
+           13|       clear
+           14|       if [ "${TMUX}" == "" ]; then
+             |               ^
+           15|          tmux new-session -A -s mysession
