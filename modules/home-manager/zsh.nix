@@ -10,9 +10,12 @@
     # prezto.tmux.autoStartRemote = true;
     prezto.tmux.defaultSessionName = "home";
     initExtra = ''
-      clear
+      # clear
       if [[ "\$\{TMUX\}" == "" ]]; then
-         tmux new-session -A -s mysession
+        tmux new-session -A -s mysession
+        echo not tmux
+      else
+        echo yes tmux
       fi
       neofetch
       eval "$(starship init zsh)"
