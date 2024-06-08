@@ -96,6 +96,7 @@
     # Niceties
     ripgrep
     neofetch
+    bat
 
     # Dev
     alejandra
