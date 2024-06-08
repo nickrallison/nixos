@@ -112,7 +112,7 @@
   programs.ssh.extraConfig = ''
     ForwardAgent yes
     ForwardX11Trusted yes
-  ''
+  '';
 
   # Enable tailscale
   services.tailscale.enable = true;
