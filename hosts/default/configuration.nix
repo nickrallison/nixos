@@ -92,10 +92,10 @@
     # Basic System Packages
     vim
     wget
-    git
 
     # Niceties
     ripgrep
+    neofetch
 
     # Dev
     alejandra
