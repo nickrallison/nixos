@@ -21,6 +21,7 @@ in {
     mouse = true;
     terminal = "tmux-256color";
     historyLimit = 100000;
+    newSession = true;
     plugins = with pkgs; [
       {
         plugin = tmux-super-fingers;
