@@ -7,7 +7,7 @@
       update = "$HOME/rebuild";
     };
     initExtra = ''
-    eval "$(starship init zsh)"
-    ''
+      eval "$(starship init zsh)"
+    '';
   };
 }

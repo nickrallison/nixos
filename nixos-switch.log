@@ -1,32 +1,23 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: syntax error, unexpected '}', expecting ';'
-
-       at /nix/store/hgywpzd3myhjx6ibf3m1ljb9y41a619d-source/modules/home-manager/zsh.nix:12:3:
-
-           11|     ''
-           12|   };
-             |   ^
-           13| }
+these 7 derivations will be built:
+  /nix/store/2i7l1fkn4a66is77i95hr3683y29p5pi-hm_.zshrc.drv
+  /nix/store/2wilvv71qxb4f4j6gzyff1w8mywdjmqg-home-manager-files.drv
+  /nix/store/7h3sg6f24isvm8b1smk42lha2l5mwpm0-home-manager-generation.drv
+  /nix/store/fa0yjw30bf0y5l855s728967x4ywfnfb-unit-home-manager-nick.service.drv
+  /nix/store/is0sf9ssnv67dcy09vmb23q1nzj86n1m-system-units.drv
+  /nix/store/jc4gkmgghnpgwmi7n72l5a96hpnx629b-etc.drv
+  /nix/store/32wqpkgw2bxvdwxjqwwi1mz700wx8b7x-nixos-system-nixos-24.11.20240531.57610d2.drv
+building '/nix/store/2i7l1fkn4a66is77i95hr3683y29p5pi-hm_.zshrc.drv'...
+building '/nix/store/2wilvv71qxb4f4j6gzyff1w8mywdjmqg-home-manager-files.drv'...
+building '/nix/store/7h3sg6f24isvm8b1smk42lha2l5mwpm0-home-manager-generation.drv'...
+building '/nix/store/fa0yjw30bf0y5l855s728967x4ywfnfb-unit-home-manager-nick.service.drv'...
+building '/nix/store/is0sf9ssnv67dcy09vmb23q1nzj86n1m-system-units.drv'...
+building '/nix/store/jc4gkmgghnpgwmi7n72l5a96hpnx629b-etc.drv'...
+building '/nix/store/32wqpkgw2bxvdwxjqwwi1mz700wx8b7x-nixos-system-nixos-24.11.20240531.57610d2.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for nick...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-nick.service
