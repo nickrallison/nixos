@@ -33,6 +33,7 @@
   home.sessionVariables = {
     # STARSHIP_CONFIG = "../../modules/home-manager/starship/starship.toml";
     EDITOR = "hx";
+    DISPLAY = "0.0";
   };
 
   # Let Home Manager install and manage itself.
