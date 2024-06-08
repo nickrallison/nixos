@@ -7,6 +7,7 @@
       update = "$HOME/rebuild";
     };
     initExtra = ''
+      clear
       neofetch
       eval "$(starship init zsh)"
     '';
