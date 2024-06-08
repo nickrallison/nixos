@@ -11,7 +11,7 @@
     prezto.tmux.defaultSessionName = "home";
     initExtra = ''
       clear
-      if [ "\$\{TMUX\}" == "" ]; then
+      if [[ "\$\{TMUX\}" == "" ]]; then
          tmux new-session -A -s mysession
       fi
       neofetch
