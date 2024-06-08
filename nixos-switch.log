@@ -1,9 +1,30 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-building the system configuration...
-warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/jj6hhmrn6c80k8xl9j0lqd9c5idbds0y-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
-activating the configuration...
-setting up /etc...
-reloading user units for nick...
-restarting sysinit-reactivation.target
-restarting the following units: home-manager-nick.service
+error:
+       … while calling the 'seq' builtin
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:322:18:
+
+          321|         options = checked options;
+          322|         config = checked (removeAttrs config [ "_module" ]);
+             |                  ^
+          323|         _module = checked (config._module);
+
+       … while evaluating a branch condition
+
+         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:261:9:
+
+          260|       checkUnmatched =
+          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
+             |         ^
+          262|           let
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: syntax error, unexpected '=', expecting ';'
+
+       at /nix/store/rcda6w0pi95cd7qvjqg42h28lh69lvfl-source/hosts/default/configuration.nix:118:29:
+
+          117|   # Enable tailscale
+          118|   services.tailscale.enable = true;
+             |                             ^
+          119|
