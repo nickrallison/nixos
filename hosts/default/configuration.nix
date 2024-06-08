@@ -106,6 +106,8 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  programs.ssh.forwardX11 = true;
+  programs.ssh.setXAuthLocation = true;
 
   # Enable tailscale
   services.tailscale.enable = true;
