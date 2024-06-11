@@ -5,6 +5,8 @@ nixdir=$HOME/dotfiles/nixos
 
 # set -e
 pushd $nixdir
+git pull
+
 hx .
 alejandra . &>/dev/null
 git diff -U0 *.nix
