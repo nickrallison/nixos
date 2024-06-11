@@ -28,6 +28,7 @@ in {
         extraConfig = "set -g @super-fingers-key f";
       }
       tmuxPlugins.better-mouse-mode
+      tmuxPlugins.dracula
     ];
     extraConfig = ''
       set-option -sa terminal-overrides ",xterm*:Tc"
