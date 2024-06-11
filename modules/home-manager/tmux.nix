@@ -30,6 +30,7 @@ in {
       tmuxPlugins.better-mouse-mode
     ];
     extraConfig = ''
+      set-option -sa terminal-overrides ",xterm*:Tc"
     '';
   };
 }
