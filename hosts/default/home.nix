@@ -10,7 +10,8 @@
     ../../modules/home-manager/tmux.nix
     ../../modules/home-manager/starship.nix
     ../../modules/home-manager/git.nix
-    ../../modules/home-manager/firefox.nix
+    # ../../modules/home-manager/firefox.nix
+    # ../../modules/home-manager/schizofox.nix
   ];
 
   home.username = "nick";
