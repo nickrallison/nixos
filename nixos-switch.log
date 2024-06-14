@@ -22,4 +22,10 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: getting status of '/nix/store/wcbcd57d29j9d81260k8bnybm2w7f1b8-source/modules/home-manager/firefox.nix': No such file or directory
+       error: syntax error, unexpected end of file
+
+       at /nix/store/g60f9xf8q3gxn30nhlc1f3l3jjpcm91j-source/modules/home-manager/firefox.nix:1:14:
+
+            1| # firefox.nix
+             |              ^
+            2|
