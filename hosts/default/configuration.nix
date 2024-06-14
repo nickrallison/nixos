@@ -66,7 +66,7 @@
       description = "nick";
       extraGroups = ["networkmanager" "wheel"];
       packages = with pkgs; [
-        firefox
+        # firefox
       ];
     };
   };
