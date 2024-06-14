@@ -22,11 +22,11 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: undefined variable 'inputs'
+       error: attribute 'schizofox' missing
 
-       at /nix/store/fiksq03dzn7panq0xc0nlqhczh06ka5g-source/modules/home-manager/schizofox.nix:3:14:
+       at /nix/store/nhjpb92v1r0sik2zzqfz9w5hmkbyvrg7-source/modules/home-manager/schizofox.nix:7:14:
 
-            2| {
-            3|   imports = [inputs.schizofox.homeManagerModule];
+            6| }: {
+            7|   imports = [inputs.schizofox.homeManagerModule];
              |              ^
-            4|   programs.schizofox = {
+            8|   programs.schizofox = {
