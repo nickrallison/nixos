@@ -11,12 +11,12 @@
 
       Preferences = {
         # Privacy settings
-        "extensions.pocket.enabled" = lock-false;
-        "browser.newtabpage.pinned" = lock-empty-string;
-        "browser.topsites.contile.enabled" = lock-false;
-        "browser.newtabpage.activity-stream.showSponsored" = lock-false;
-        "browser.newtabpage.activity-stream.system.showSponsored" = lock-false;
-        "browser.newtabpage.activity-stream.showSponsoredTopSites" = lock-false;
+        "extensions.pocket.enabled" = false;
+        "browser.newtabpage.pinned" = "";
+        "browser.topsites.contile.enabled" = false;
+        "browser.newtabpage.activity-stream.showSponsored" = false;
+        "browser.newtabpage.activity-stream.system.showSponsored" = false;
+        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
       };
 
       ExtensionSettings = {
