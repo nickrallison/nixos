@@ -1,4 +1,4 @@
-# helix.nix
+# git.nix
 {
   programs.git = {
     enable = true;
