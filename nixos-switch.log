@@ -22,11 +22,12 @@ error:
 
        (stack trace truncated; use '--show-trace' to show the full trace)
 
-       error: attribute 'campground' missing
+       error: attribute 'nur' missing
 
-       at /nix/store/r382jwix31p0ayhl8fjb217zg60a9pvk-source/modules/home-manager/firefox.nix:10:6:
+       at /nix/store/bgyqm2if92v6rj7kg51sqqz8697kbcw2-source/modules/home-manager/firefox.nix:55:27:
 
-            9| with lib;
-           10| with lib.campground; let
-             |      ^
-           11|   cfg = config.campground.apps.firefox;
+           54|         };
+           55|         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+             |                           ^
+           56|           ublock-origin
+       Did you mean one of nrr, nurl, nut, nux or pur?
