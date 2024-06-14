@@ -1,5 +1,15 @@
 # firefox.nix
 {
+  config,
+  pkgs,
+  inputs,
+  nur,
+  ...
+}: {
+  home.sessionVariables = {
+    BROWSER = "firefox";
+  };
+
   programs.firefox = {
     enable = true;
     enableGnomeExtensions = true;
@@ -21,22 +31,28 @@
         "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
       };
 
-      # containers
-      ExtensionSettings = {
-        "uBlock0@raymondhill.net" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
-          installation_mode = "force_installed";
-        };
-        "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
-          installation_mode = "force_installed";
-        };
-      };
+      # ExtensionSettings = {
+      #   "uBlock0@raymondhill.net" = {
+      #     install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
+      #     installation_mode = "force_installed";
+      #   };
+      #   "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
+      #     install_url = "https://addons.mozilla.org/firefox/downloads/latest/bitwarden-password-manager/latest.xpi";
+      #     installation_mode = "force_installed";
+      #   };
+      # };
     };
-    profiles.Default = {
-      id = 0;
-      name = "Default";
-      isDefault = true;
+    profiles = {
+      main = {
+        id = 0;
+        isDefault = true;
+        extensions = with nur.repos.rycee.firefox-addons; [
+          sponsorblock
+          bitwarden
+          multi-account-containers
+          ublock-origin
+        ];
+      };
     };
   };
 }
