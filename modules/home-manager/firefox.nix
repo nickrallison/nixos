@@ -2,7 +2,9 @@
 {
   programs.firefox = {
     enable = true;
+    enableGnomeExtensions = true;
     policies = {
+      Cookies = "reject-tracker-and-partition-foreign";
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
       DontCheckDefaultBrowser = true;
@@ -19,6 +21,7 @@
         "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
       };
 
+      # containers
       ExtensionSettings = {
         "uBlock0@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
@@ -29,6 +32,11 @@
           installation_mode = "force_installed";
         };
       };
+    };
+    profiles.Default = {
+      id = 0;
+      name = "Default";
+      isDefault = true;
     };
   };
 }
