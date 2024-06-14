@@ -1,4 +1,28 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
+[K[Kwarning: updating lock file '/home/nick/dotfiles/nixos/flake.lock':
+• Added input 'arkenfox':
+    'git+https://github.com/dwarfmaster/arkenfox-nixos?ref=main&rev=69e312a746b9b76be2cb6c9fe2352fdf1752e2c7' (2024-06-10)
+• Added input 'arkenfox/flake-compat':
+    'github:edolstra/flake-compat/0f9255e01c2351cc7d116c072cb317785dd33b33' (2023-10-04)
+• Added input 'arkenfox/flake-utils':
+    'github:numtide/flake-utils/b1d9ab70662946ef0850d488da1c9019f3a9752a' (2024-03-11)
+• Added input 'arkenfox/flake-utils/systems':
+    'github:nix-systems/default/da67096a3b9bf56a91d16901293e51ba5b49a27e' (2023-04-09)
+• Added input 'arkenfox/nixpkgs':
+    follows 'nixpkgs'
+• Added input 'arkenfox/pre-commit':
+    'github:cachix/pre-commit-hooks.nix/cc4d466cb1254af050ff7bdf47f6d404a7c646d1' (2024-06-06)
+• Added input 'arkenfox/pre-commit/flake-compat':
+    'github:edolstra/flake-compat/0f9255e01c2351cc7d116c072cb317785dd33b33' (2023-10-04)
+• Added input 'arkenfox/pre-commit/gitignore':
+    'github:hercules-ci/gitignore.nix/637db329424fd7e46cf4185293b9cc8c88c95394' (2024-02-28)
+• Added input 'arkenfox/pre-commit/gitignore/nixpkgs':
+    follows 'arkenfox/pre-commit/nixpkgs'
+• Added input 'arkenfox/pre-commit/nixpkgs':
+    'github:NixOS/nixpkgs/e367f7a1fb93137af22a3908f00b9a35e2d286a7' (2024-03-18)
+• Added input 'arkenfox/pre-commit/nixpkgs-stable':
+    'github:NixOS/nixpkgs/614b4613980a522ba49f0d194531beddbb7220d3' (2024-03-17)
+warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 error:
@@ -23,7 +47,7 @@ error:
        (stack trace truncated; use '--show-trace' to show the full trace)
 
        error: The option `home-manager.users.nick.programs.firefox.arkenfox' does not exist. Definition values:
-       - In `/nix/store/3nfffh3dmz4k5s569fy6zfqi5xrzwklj-source/modules/home-manager/firefox.nix':
+       - In `/nix/store/5jlpcw5i19xq8j35ygjv86nzrcacshcx-source/modules/home-manager/firefox.nix':
            {
              enable = true;
              version = "103.0";
