@@ -1,31 +1,15 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
-
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: syntax error, unexpected end of file
-
-       at /nix/store/g60f9xf8q3gxn30nhlc1f3l3jjpcm91j-source/modules/home-manager/firefox.nix:1:14:
-
-            1| # firefox.nix
-             |              ^
-            2|
+trace: warning: nick profile: The option `programs.zsh.enableAutosuggestions' defined in `/nix/store/2yaqdwszgv10jsl384c1zpnlsphh78r9-source/modules/home-manager/zsh.nix' has been renamed to `programs.zsh.autosuggestion.enable'.
+trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/2yaqdwszgv10jsl384c1zpnlsphh78r9-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
+these 2 derivations will be built:
+  /nix/store/8g5gyi88w5m11qjyhv0hkq7q16a8xjps-etc.drv
+  /nix/store/wpw5lrlx9r33a5vr7wlxgd013hchyig8-nixos-system-nixos-24.11.20240531.57610d2.drv
+building '/nix/store/8g5gyi88w5m11qjyhv0hkq7q16a8xjps-etc.drv'...
+building '/nix/store/wpw5lrlx9r33a5vr7wlxgd013hchyig8-nixos-system-nixos-24.11.20240531.57610d2.drv'...
+activating the configuration...
+setting up /etc...
+removing obsolete symlink ‘/etc/profiles/per-user/nick’...
+reloading user units for nick...
+restarting sysinit-reactivation.target
