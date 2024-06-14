@@ -1,33 +1,64 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
+trace: warning: nick profile: The option `programs.zsh.enableAutosuggestions' defined in `/nix/store/q6yw3q941abm851q8hprv5sfyvraww0p-source/modules/home-manager/zsh.nix' has been renamed to `programs.zsh.autosuggestion.enable'.
+trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/q6yw3q941abm851q8hprv5sfyvraww0p-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
+these 10 derivations will be built:
+  /nix/store/afcmxadqymsmhd3kqg570m7zqyvvcn06-hm_.mozillafirefoxdefaultuser.js.drv
+  /nix/store/p6fjkiiya848mal3b2qjk0lf1j4513by-search.json.mozlz4.drv
+  /nix/store/am8qmcslcwyx312ckh237vf51wq9d88w-home-manager-files.drv
+  /nix/store/i8rph021kljar9g85nchxpnca56vhjxs-check-link-targets.sh.drv
+  /nix/store/qjrbzphzissagms70f3zyhg46pgn129x-activation-script.drv
+  /nix/store/bxbx6s6y33xg1wz2pwcwhzl29ndffdsq-home-manager-generation.drv
+  /nix/store/bfmglh177wgjab8wqgs5fhdx1nwp1z1n-unit-home-manager-nick.service.drv
+  /nix/store/a7m14hfmrjajswgya20c42rvjbnhnafq-system-units.drv
+  /nix/store/kj704p1kic31hhc51figy6l9vb8sf79m-etc.drv
+  /nix/store/1mx79swn9y754cylc0rsr1sicxcmkk8c-nixos-system-nixos-24.11.20240531.57610d2.drv
+these 4 paths will be fetched (0.67 MiB download, 3.80 MiB unpacked):
+  /nix/store/42hfq598ir252bpabqcvazcv5c2jq621-mozlz4a-2022-03-19
+  /nix/store/qannz09m66qpcy3ny1f4nkl4ql0g71ks-openssl-3.0.13-bin
+  /nix/store/191vca5vdxdlr32k2hpzd66mic98930f-openssl-3.0.13-dev
+  /nix/store/qcvnznm199pmwaiyxcav6b7w1kjch7xm-python3.11-lz4-4.3.3
+building '/nix/store/i8rph021kljar9g85nchxpnca56vhjxs-check-link-targets.sh.drv'...
+building '/nix/store/afcmxadqymsmhd3kqg570m7zqyvvcn06-hm_.mozillafirefoxdefaultuser.js.drv'...
+copying path '/nix/store/qannz09m66qpcy3ny1f4nkl4ql0g71ks-openssl-3.0.13-bin' from 'https://cache.nixos.org'...
+copying path '/nix/store/qcvnznm199pmwaiyxcav6b7w1kjch7xm-python3.11-lz4-4.3.3' from 'https://cache.nixos.org'...
+building '/nix/store/qjrbzphzissagms70f3zyhg46pgn129x-activation-script.drv'...
+copying path '/nix/store/42hfq598ir252bpabqcvazcv5c2jq621-mozlz4a-2022-03-19' from 'https://cache.nixos.org'...
+copying path '/nix/store/191vca5vdxdlr32k2hpzd66mic98930f-openssl-3.0.13-dev' from 'https://cache.nixos.org'...
+building '/nix/store/p6fjkiiya848mal3b2qjk0lf1j4513by-search.json.mozlz4.drv'...
+building '/nix/store/am8qmcslcwyx312ckh237vf51wq9d88w-home-manager-files.drv'...
+building '/nix/store/bxbx6s6y33xg1wz2pwcwhzl29ndffdsq-home-manager-generation.drv'...
+building '/nix/store/bfmglh177wgjab8wqgs5fhdx1nwp1z1n-unit-home-manager-nick.service.drv'...
+building '/nix/store/a7m14hfmrjajswgya20c42rvjbnhnafq-system-units.drv'...
+building '/nix/store/kj704p1kic31hhc51figy6l9vb8sf79m-etc.drv'...
+building '/nix/store/1mx79swn9y754cylc0rsr1sicxcmkk8c-nixos-system-nixos-24.11.20240531.57610d2.drv'...
+activating the configuration...
+setting up /etc...
+reloading user units for nick...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-nick.service
+Job for home-manager-nick.service failed because the control process exited with error code.
+See "systemctl status home-manager-nick.service" and "journalctl -xeu home-manager-nick.service" for details.
+warning: the following units failed: home-manager-nick.service
 
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
+× home-manager-nick.service - Home Manager environment for nick
+     Loaded: loaded (/etc/systemd/system/home-manager-nick.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Fri 2024-06-14 14:47:31 MDT; 54ms ago
+   Duration: 22min 44.325s
+    Process: 150516 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/112hz894dg05wgndm3jahc4ywb3b8ch0-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 150516 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 111ms
 
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: attribute 'nur' missing
-
-       at /nix/store/bgyqm2if92v6rj7kg51sqqz8697kbcw2-source/modules/home-manager/firefox.nix:55:27:
-
-           54|         };
-           55|         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-             |                           ^
-           56|           ublock-origin
-       Did you mean one of nrr, nurl, nut, nux or pur?
+Jun 14 14:47:31 nixos hm-activate-nick[150610]: Please do one of the following:
+Jun 14 14:47:31 nixos hm-activate-nick[150610]: - Move or remove the above files and try again.
+Jun 14 14:47:31 nixos hm-activate-nick[150610]: - In standalone mode, use 'home-manager switch -b backup' to back up
+Jun 14 14:47:31 nixos hm-activate-nick[150610]:   files automatically.
+Jun 14 14:47:31 nixos hm-activate-nick[150610]: - When used as a NixOS or nix-darwin module, set
+Jun 14 14:47:31 nixos hm-activate-nick[150610]:     'home-manager.backupFileExtension'
+Jun 14 14:47:31 nixos hm-activate-nick[150610]:   to, for example, 'backup' and rebuild.
+Jun 14 14:47:31 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
+Jun 14 14:47:31 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
+Jun 14 14:47:31 nixos systemd[1]: Failed to start Home Manager environment for nick.
+warning: error(s) occurred while switching to the new configuration
