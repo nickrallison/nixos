@@ -1,32 +1,40 @@
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
+trace: warning: The cfg.enableGnomeExtensions argument for `firefox.override` is deprecated, please add `pkgs.gnome-browser-connector` to `nativeMessagingHosts` instead
+trace: warning: nick profile: The option `programs.zsh.enableAutosuggestions' defined in `/nix/store/jmiyjrrhrlhj6f77igfbsj6zn1j7x73x-source/modules/home-manager/zsh.nix' has been renamed to `programs.zsh.autosuggestion.enable'.
+trace: warning: nick profile: Using 'programs.firefox.enableGnomeExtensions' has been deprecated and
+will be removed in the future. Please change to overriding the package
+configuration using 'programs.firefox.package' instead. You can refer to
+its example for how to do this.
 
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/attrsets.nix:1575:11:
+trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/jmiyjrrhrlhj6f77igfbsj6zn1j7x73x-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
+activating the configuration...
+setting up /etc...
+reloading user units for nick...
+restarting sysinit-reactivation.target
+restarting the following units: home-manager-nick.service
+Job for home-manager-nick.service failed because the control process exited with error code.
+See "systemctl status home-manager-nick.service" and "journalctl -xeu home-manager-nick.service" for details.
+warning: the following units failed: home-manager-nick.service
 
-         1574|         || pred here (elemAt values 1) (head values) then
-         1575|           head values
-             |           ^
-         1576|         else
+× home-manager-nick.service - Home Manager environment for nick
+     Loaded: loaded (/etc/systemd/system/home-manager-nick.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Fri 2024-06-14 16:31:57 MDT; 60ms ago
+   Duration: 5min 46.624s
+    Process: 31276 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/h4z12wm9z7m0h404w9pzxbcqhnz9g1gd-home-manager-generation (code=exited, status=1/FAILURE)
+   Main PID: 31276 (code=exited, status=1/FAILURE)
+         IP: 0B in, 0B out
+        CPU: 116ms
 
-       … while evaluating the attribute 'value'
-
-         at /nix/store/5jgh89kgmrb687c254wxdac4cj5hqjw8-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: attribute 'schizofox' missing
-
-       at /nix/store/nhjpb92v1r0sik2zzqfz9w5hmkbyvrg7-source/modules/home-manager/schizofox.nix:7:14:
-
-            6| }: {
-            7|   imports = [inputs.schizofox.homeManagerModule];
-             |              ^
-            8|   programs.schizofox = {
+Jun 14 16:31:57 nixos hm-activate-nick[31365]: Please do one of the following:
+Jun 14 16:31:57 nixos hm-activate-nick[31365]: - Move or remove the above files and try again.
+Jun 14 16:31:57 nixos hm-activate-nick[31365]: - In standalone mode, use 'home-manager switch -b backup' to back up
+Jun 14 16:31:57 nixos hm-activate-nick[31365]:   files automatically.
+Jun 14 16:31:57 nixos hm-activate-nick[31365]: - When used as a NixOS or nix-darwin module, set
+Jun 14 16:31:57 nixos hm-activate-nick[31365]:     'home-manager.backupFileExtension'
+Jun 14 16:31:57 nixos hm-activate-nick[31365]:   to, for example, 'backup' and rebuild.
+Jun 14 16:31:57 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
+Jun 14 16:31:57 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
+Jun 14 16:31:57 nixos systemd[1]: Failed to start Home Manager environment for nick.
+warning: error(s) occurred while switching to the new configuration
