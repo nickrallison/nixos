@@ -41,11 +41,11 @@
         };
       };
     };
-    profiles = {
-      main = {
-        id = 0;
-        isDefault = true;
-      };
-    };
+    # profiles = {
+    #   main = {
+    #     id = 0;
+    #     isDefault = true;
+    #   };
+    # };
   };
 }

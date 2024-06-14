@@ -2,36 +2,27 @@ warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 building the system configuration...
 warning: Git tree '/home/nick/dotfiles/nixos' is dirty
 trace: warning: The cfg.enableGnomeExtensions argument for `firefox.override` is deprecated, please add `pkgs.gnome-browser-connector` to `nativeMessagingHosts` instead
-trace: warning: nick profile: The option `programs.zsh.enableAutosuggestions' defined in `/nix/store/frabs01zfcqf8sz7crqcqzzrs2fkr619-source/modules/home-manager/zsh.nix' has been renamed to `programs.zsh.autosuggestion.enable'.
+trace: warning: nick profile: The option `programs.zsh.enableAutosuggestions' defined in `/nix/store/xd7vgg35m4fl6wcl7141l6im7ad5kjam-source/modules/home-manager/zsh.nix' has been renamed to `programs.zsh.autosuggestion.enable'.
 trace: warning: nick profile: Using 'programs.firefox.enableGnomeExtensions' has been deprecated and
 will be removed in the future. Please change to overriding the package
 configuration using 'programs.firefox.package' instead. You can refer to
 its example for how to do this.
 
-trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/frabs01zfcqf8sz7crqcqzzrs2fkr619-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
+trace: warning: The option `services.openssh.forwardX11' defined in `/nix/store/xd7vgg35m4fl6wcl7141l6im7ad5kjam-source/hosts/default/configuration.nix' has been renamed to `services.openssh.settings.X11Forwarding'.
+these 6 derivations will be built:
+  /nix/store/chzj6yxlbymnwxlw0j55wb99mkk179sj-home-manager-files.drv
+  /nix/store/0faxdi8x7ka7dwnxikkfkdik0bhzm578-home-manager-generation.drv
+  /nix/store/l10lm78nlvmfff5755fsv3m3y64rhzxg-unit-home-manager-nick.service.drv
+  /nix/store/bjwcih5dimjravqk0vv7mkkcxwx03w4q-system-units.drv
+  /nix/store/i5047nbgvv0ykb05bl21kal8aq8rdsv7-etc.drv
+  /nix/store/sa70kpb2x3lzfbxblzrm2cykmzmd6r16-nixos-system-nixos-24.11.20240531.57610d2.drv
+building '/nix/store/chzj6yxlbymnwxlw0j55wb99mkk179sj-home-manager-files.drv'...
+building '/nix/store/0faxdi8x7ka7dwnxikkfkdik0bhzm578-home-manager-generation.drv'...
+building '/nix/store/l10lm78nlvmfff5755fsv3m3y64rhzxg-unit-home-manager-nick.service.drv'...
+building '/nix/store/bjwcih5dimjravqk0vv7mkkcxwx03w4q-system-units.drv'...
+building '/nix/store/i5047nbgvv0ykb05bl21kal8aq8rdsv7-etc.drv'...
+building '/nix/store/sa70kpb2x3lzfbxblzrm2cykmzmd6r16-nixos-system-nixos-24.11.20240531.57610d2.drv'...
 activating the configuration...
 setting up /etc...
 reloading user units for nick...
 restarting sysinit-reactivation.target
-warning: the following units failed: home-manager-nick.service
-
-× home-manager-nick.service - Home Manager environment for nick
-     Loaded: loaded (/etc/systemd/system/home-manager-nick.service; enabled; preset: enabled)
-     Active: failed (Result: exit-code) since Fri 2024-06-14 16:36:27 MDT; 62ms ago
-   Duration: 5min 46.624s
-    Process: 43464 ExecStart=/nix/store/7i0d80cp7l2f3kzphp2pgl75f8k9bqal-hm-setup-env /nix/store/y72hr1li33d5jmfr8vx06h8mx7v9190l-home-manager-generation (code=exited, status=1/FAILURE)
-   Main PID: 43464 (code=exited, status=1/FAILURE)
-         IP: 0B in, 0B out
-        CPU: 121ms
-
-Jun 14 16:36:27 nixos hm-activate-nick[43551]: Please do one of the following:
-Jun 14 16:36:27 nixos hm-activate-nick[43551]: - Move or remove the above files and try again.
-Jun 14 16:36:27 nixos hm-activate-nick[43551]: - In standalone mode, use 'home-manager switch -b backup' to back up
-Jun 14 16:36:27 nixos hm-activate-nick[43551]:   files automatically.
-Jun 14 16:36:27 nixos hm-activate-nick[43551]: - When used as a NixOS or nix-darwin module, set
-Jun 14 16:36:27 nixos hm-activate-nick[43551]:     'home-manager.backupFileExtension'
-Jun 14 16:36:27 nixos hm-activate-nick[43551]:   to, for example, 'backup' and rebuild.
-Jun 14 16:36:27 nixos systemd[1]: home-manager-nick.service: Main process exited, code=exited, status=1/FAILURE
-Jun 14 16:36:27 nixos systemd[1]: home-manager-nick.service: Failed with result 'exit-code'.
-Jun 14 16:36:27 nixos systemd[1]: Failed to start Home Manager environment for nick.
-warning: error(s) occurred while switching to the new configuration
