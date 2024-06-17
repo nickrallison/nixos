@@ -97,9 +97,13 @@
     ripgrep
     neofetch
     bat
+    ripgrep-all
 
     # Dev
     alejandra
+
+    # school
+    python312Packages.pdftotext
   ];
 
   # zsh
