@@ -104,6 +104,7 @@
     yarn
     cargo
     rustup
+    wasm-pack
 
     # school
     python312Packages.pdftotext
