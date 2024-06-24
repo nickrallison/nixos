@@ -102,6 +102,8 @@
     # Dev
     alejandra
     yarn
+    cargo
+    rustup
 
     # school
     python312Packages.pdftotext
