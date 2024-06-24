@@ -101,6 +101,7 @@
 
     # Dev
     alejandra
+    yarn
 
     # school
     python312Packages.pdftotext
